@@ -1,0 +1,101 @@
+ *{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+.container{
+    background-color: purple;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 54px;
+}
+h2{
+    display: inline-block;
+    background-color: aliceblue;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+}
+button{
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+}
+button:hover{
+    cursor: pointer;
+}
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+     gap: 10px; 
+    
+    justify-content: center;
+    margin: 10px;
+}
+.square{
+    height: 170px;
+    width: 200px;
+   
+    border: 2px solid black;
+    
+}
+.mole{
+    background-image:url("https://cdn4.vectorstock.com/i/1000x1000/43/13/cartoon-funny-mole-vector-6594313.jpg") ;
+    background-size: cover;
+   
+}
+
+@media (max-width:768px) {
+    .container{
+        height: 100vh;
+        padding: 10px;
+    }
+    .grid{
+        display: flex;
+       
+        
+    }
+    .square{
+        height: 150px;
+        width: 170px;
+    }
+   
+}
+ @media (max-width:461px) {
+    .container{
+        height: 100vh;
+        padding: 10px;
+    }
+    .square{
+        height: 80px;
+        width: 100px;
+    }
+    button{
+        font-size: 28px;
+    }
+    h1{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .grid{
+       
+        
+        display: flex;
+        gap: 20px;
+        margin-top: 20px;
+        
+    }
+} 
